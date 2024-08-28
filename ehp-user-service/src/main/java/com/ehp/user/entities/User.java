@@ -23,8 +23,8 @@ public class User {
 	private String email;
 	@Column
 	private String mobile;
-	@ManyToMany
-	private Role role;
+	//@ManyToMany
+	//private Role role;
 	@Column
 	private LocalTime createdDate;
 	@Column
