@@ -1,6 +1,7 @@
 package com.ehp.user.entities;
 
 import java.time.LocalTime;
+import java.util.Set;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -23,8 +24,10 @@ public class User {
 	private String email;
 	@Column
 	private String mobile;
-	//@ManyToMany
-	//private Role role;
+	
+	@ManyToMany
+	private Set<Role> role;
+	
 	@Column
 	private LocalTime createdDate;
 	@Column
